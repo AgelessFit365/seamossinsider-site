@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sea Moss Insider Authenticity Audit — $7</title>
+<meta name="description" content="The 2026 buyer's safety checklist. Know what's actually in your sea moss before you buy or eat it. With botulism recalls, pool-grown fakes, and contamination risks at an all-time high, this is the guide every sea moss user needs.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --slate: #1c2a2a;
+    --teal: #1d9e75;
+    --teal-light: #5dcaa5;
+    --teal-pale: #e1f5ee;
+    --cream: #f8f5f0;
+    --text: #1c2a2a;
+    --muted: #5a6e6e;
+    --border: #d0e0dc;
+    --amber: #b07d2a;
+    --amber-pale: #fef8ec;
+    --red: #a33030;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  .nav {
+    background: var(--slate);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  .nav-dot {
+    width: 8px; height: 8px;
+    background: var(--teal-light);
+    border-radius: 50%;
+  }
+
+  .nav-name {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--teal-light);
+    opacity: 0.85;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  .nav-link:hover { color: rgba(255,255,255,0.85); }
+
+  /* HERO */
+  .hero {
+    background: var(--slate);
+    padding: 80px 24px 90px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; left: -80px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(29,158,117,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; right: -60px;
+    width: 240px; height: 240px;
+    background: radial-gradient(circle, rgba(93,202,165,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(29,158,117,0.18);
+    color: var(--teal-light);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(93,202,165,0.25);
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 22px;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--teal-light);
+  }
+
+  .hero-sub {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.65);
+    max-width: 520px;
+    margin: 0 auto 36px;
+    line-height: 1.75;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    background: var(--teal);
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 16px 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.01em;
+  }
+
+  .hero-cta:hover {
+    background: #16876300;
+    background: #159a6e;
+    transform: translateY(-1px);
+  }
+
+  .hero-price-note {
+    margin-top: 14px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    font-weight: 300;
+  }
+
+  /* URGENCY BAR */
+  .urgency-bar {
+    background: var(--amber-pale);
+    border-bottom: 1px solid #e8d8b0;
+    padding: 14px 24px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b4c10;
+    font-weight: 300;
+  }
+
+  .urgency-bar strong {
+    font-weight: 500;
+    color: var(--amber);
+  }
+
+  /* WHAT'S INSIDE */
+  .section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 70px 24px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 12px;
+  }
+
+  .section h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(26px, 4vw, 38px);
+    color: var(--slate);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .section p.lead {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 32px;
+    max-width: 580px;
+  }
+
+  /* CONTENTS LIST */
+  .contents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .content-item {
+    background: white;
+    border: 0.5px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .content-num {
+    width: 28px; height: 28px;
+    background: var(--teal-pale);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--teal);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .content-text strong {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--slate);
+    margin-bottom: 4px;
+  }
+
+  .content-text span {
+    font-size: 13.5px;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  /* DIVIDER */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* PROBLEM SECTION */
+  .problem-section {
+    background: white;
+    padding: 70px 24px;
+  }
+
+  .problem-inner {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .quote-block {
+    border-left: 3px solid var(--teal);
+    padding: 18px 24px;
+    margin: 28px 0;
+    background: var(--teal-pale);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .quote-block p {
+    font-size: 16px;
+    color: var(--slate);
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  .quote-block cite {
+    display: block;
+    font-size: 13px;
+    color: var(--teal);
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  /* STATS */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 32px 0;
+  }
+
+  @media (max-width: 600px) {
+    .stats-row { grid-template-columns: 1fr 1fr; }
+  }
+
+  .stat-card {
+    background: var(--slate);
+    color: white;
+    border-radius: 10px;
+    padding: 20px 18px;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--teal-light);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+    line-height: 1.45;
+  }
+
+  /* PRICING SECTION */
+  .pricing-section {
+    background: var(--slate);
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .pricing-inner {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .pricing-card {
+    background: white;
+    border-radius: 14px;
+    padding: 40px 36px;
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .pricing-eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 14px;
+  }
+
+  .pricing-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--slate);
+    margin-bottom: 8px;
+  }
+
+  .pricing-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--teal);
+    line-height: 1;
+    margin: 20px 0 6px;
+  }
+
+  .pricing-price sup {
+    font-size: 28px;
+    vertical-align: super;
+    color: var(--muted);
+  }
+
+  .pricing-desc {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 28px;
+    font-weight: 300;
+  }
+
+  .pricing-includes {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 28px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+
+  .pricing-includes li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    font-size: 14.5px;
+    color: var(--text);
+  }
+
+  .pricing-includes li::before {
+    content: '';
+    width: 18px; height: 18px;
+    background: var(--teal-pale);
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 9l3.5 3.5L14 6' stroke='%231d9e75' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .buy-btn {
+    display: block;
+    width: 100%;
+    background: var(--teal);
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.01em;
+  }
+
+  .buy-btn:hover {
+    background: #159a6e;
+    transform: translateY(-1px);
+  }
+
+  .buy-note {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-top: 12px;
+    font-weight: 300;
+  }
+
+  .pricing-section .section-label {
+    color: var(--teal-light);
+  }
+
+  .pricing-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--slate);
+    padding: 28px 24px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  footer p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.3);
+    font-weight: 300;
+    margin: 0;
+  }
+
+  footer a {
+    color: var(--teal-light);
+    text-decoration: none;
+    opacity: 0.7;
+  }
+
+  footer a:hover { opacity: 1; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://seamossinsider.com" class="nav-brand">
+    <div class="nav-dot"></div>
+    <span class="nav-name">SeaMoss Insider</span>
+  </a>
+  <a href="https://seamossinsider.com" class="nav-link">← Back to site</a>
+</nav>
+
+<div class="urgency-bar">
+  <strong>2026 Alert:</strong> Multiple sea moss gel products recalled this year due to botulism contamination. This guide tells you exactly what to look for.
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">2026 Edition — Updated for current recalls</div>
+    <h1>The Sea Moss <em>Authenticity</em> Audit</h1>
+    <p class="hero-sub">The 6-page safety checklist that tells you exactly what's in your sea moss — before you buy it, and before you eat it.</p>
+    <a href="#pricing" class="hero-cta">Get the Audit — $7</a>
+    <p class="hero-price-note">Instant PDF download · 6 pages · Print-ready</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="problem-section">
+  <div class="problem-inner">
+    <div class="section-label">Why this exists</div>
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: var(--slate); margin-bottom: 16px;">The sea moss market has a trust problem.</h2>
+    <p class="lead" style="font-size: 17px; font-weight: 300; color: var(--muted); line-height: 1.8; margin-bottom: 20px;">Over 14,000 brands now sell sea moss products. The vast majority of them make the same wildcrafted, 92-mineral claims. Most can't back them up.</p>
+
+    <div class="quote-block">
+      <p>Pool-grown sea moss can legally be labeled "organic." Bleached moss looks cleaner in photos. Gel made without food-safety protocols can carry pathogens your body can't detect before it's too late.</p>
+      <cite>— What we found researching this guide</cite>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-number">73%</div>
+        <div class="stat-label">of brands can't verify their wildcrafted sourcing claims</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">14K+</div>
+        <div class="stat-label">brands currently selling sea moss globally</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">2026</div>
+        <div class="stat-label">year of multiple documented botulism recalls in North America</div>
+      </div>
+    </div>
+
+    <p style="font-size: 16px; color: var(--muted); font-weight: 300; line-height: 1.8;">This guide exists because the information to protect yourself is scattered across academic papers, FDA recall notices, and supplier forums — and most consumers never see it. We compiled it into a single, printable checklist.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="section-label">What's inside</div>
+  <h2>Six pages. Every safety question answered.</h2>
+  <p class="lead">Print it out. Keep it in your kitchen. Run every sea moss purchase through it.</p>
+
+  <div class="contents-grid">
+    <div class="content-item">
+      <div class="content-num">1</div>
+      <div class="content-text">
+        <strong>The 2026 Safety Reality</strong>
+        <span>What the botulism recalls actually mean, what pool-grown vs wildcrafted really is, and the market stats no brand wants you to know.</span>
+      </div>
+    </div>
+    <div class="content-item">
+      <div class="content-num">2</div>
+      <div class="content-text">
+        <strong>The 5 Red Flag Checklist</strong>
+        <span>Visual inspection tests you can run before buying — color, salt crust, smell, texture, labeling. Takes 60 seconds.</span>
+      </div>
+    </div>
+    <div class="content-item">
+      <div class="content-num">3</div>
+      <div class="content-text">
+        <strong>Wildcrafted vs Pool-Grown Test</strong>
+        <span>The soak test, the price reality check, and a side-by-side comparison of what to look for and what to avoid.</span>
+      </div>
+    </div>
+    <div class="content-item">
+      <div class="content-num">4</div>
+      <div class="content-text">
+        <strong>3 Signs Your Gel Has Gone Bad</strong>
+        <span>The color, smell, and texture changes that signal danger — plus a safe storage guide with timeframes for every method.</span>
+      </div>
+    </div>
+    <div class="content-item">
+      <div class="content-num">5</div>
+      <div class="content-text">
+        <strong>The Amazon Buyer's Filter</strong>
+        <span>Five red flags to scroll past and three green lights that signal a trustworthy seller. A 5-minute filter for any product listing.</span>
+      </div>
+    </div>
+    <div class="content-item">
+      <div class="content-num">6</div>
+      <div class="content-text">
+        <strong>Printable Checklists Throughout</strong>
+        <span>Every section includes physical checkbox items — print it out and check off each point as you inspect a new product.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section" id="pricing">
+  <div class="pricing-inner">
+    <div class="section-label">Get the guide</div>
+    <h2>One checklist. Protect every purchase.</h2>
+
+    <div class="pricing-card">
+      <div class="pricing-eyebrow">Instant Download</div>
+      <div class="pricing-title">The Sea Moss Insider Authenticity Audit</div>
+      <div class="pricing-price"><sup>$</sup>7</div>
+      <div class="pricing-desc">One-time purchase · PDF · Print-ready · 6 pages</div>
+      <ul class="pricing-includes">
+        <li>The 5 Visual Red Flag checklist</li>
+        <li>Wildcrafted vs. pool-grown soak test</li>
+        <li>3 gel safety warning signs</li>
+        <li>Safe storage time guide</li>
+        <li>Amazon seller filter (5 red flags, 3 green lights)</li>
+        <li>Print-ready format — keep it in your kitchen</li>
+        <li>2026 Edition — updated for current recalls</li>
+      </ul>
+      <!-- REPLACE href with your Gumroad product link -->
+      <a href="https://gumroad.com/YOUR-PRODUCT-LINK" class="buy-btn">Get Instant Access — $7 →</a>
+      <p class="buy-note">Delivered instantly via Gumroad. Secure checkout. PDF download.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2026 <a href="https://seamossinsider.com">SeaMossInsider.com</a> &nbsp;·&nbsp;
+    For educational purposes only. Not medical advice.
+  </p>
+</footer>
+
+</body>
+</html>
