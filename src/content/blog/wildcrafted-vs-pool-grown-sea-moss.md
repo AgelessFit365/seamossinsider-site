@@ -6,6 +6,8 @@ pubDate: 2026-03-15
 tags: ["sea moss", "wildcrafted sea moss", "pool grown sea moss", "sea moss quality", "how to buy sea moss"]
 ---
 
+> **Quick Answer:** Not all sea moss labeled "wildcrafted" actually comes from the ocean. A significant portion of the market is pool-grown in land-based tanks — and brands rarely advertise this. Wildcrafted sea moss has a more complex, naturally occurring mineral profile because it absorbs directly from seawater. Key signs of the real thing: color variation within the batch, residual sea salt or fine sand, and a supplier who can name the specific harvest region.
+
 If you've spent any time shopping for sea moss, you've probably noticed the word *wildcrafted* plastered on nearly every bottle, bag, and brand page.
 
 Here's the problem: it can't all be wildcrafted. Not even close.
