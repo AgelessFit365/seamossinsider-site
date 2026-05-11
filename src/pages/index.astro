@@ -3,47 +3,221 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner">
+          <span class="hero-tag">Wellness from the Sea</span>
+          <h1>The Inside Track on Sea Moss for Active Adults</h1>
+          <p>Research-backed guides on sea moss for energy, inflammation, thyroid health, and longevity — written for people who actually use this stuff.</p>
+          <a href="/blog" class="btn-primary">Read the Blog</a>
+        </div>
+      </section>
+
+      <!-- LATEST POSTS -->
+      <section class="posts-section">
+        <div class="section-inner">
+          <h2>Latest Articles</h2>
+          <div class="post-grid">
+            {posts.map(post => (
+              <a href={`/blog/${post.slug}`} class="post-card">
+                <span class="post-tag">Sea Moss</span>
+                <h3>{post.data.title}</h3>
+                <p>{post.data.description}</p>
+                <span class="read-more">Read more →</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT STRIP -->
+      <section class="about-strip">
+        <div class="section-inner about-inner">
+          <div>
+            <h2>Why SeamossInsider?</h2>
+            <p>Most sea moss content is surface-level. We go deeper — looking at the actual research, the best forms, and what matters for people over 40 who are serious about their health.</p>
+          </div>
+          <a href="/about" class="btn-outline">About This Site</a>
+        </div>
+      </section>
+
+    </main>
+    <Footer />
+  </body>
 </html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+  }
+
+  /* HERO */
+  .hero {
+    background: #1c2a2a;
+    padding: 80px 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #1d9e75;
+  }
+  .hero-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .hero-tag {
+    display: inline-block;
+    background: #1d9e75;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    color: #ffffff;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.2;
+    margin: 0 0 20px;
+    font-weight: 600;
+  }
+  .hero p {
+    color: #9fe1cb;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0 0 32px;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: #1d9e75;
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s;
+  }
+  .btn-primary:hover { background: #0f6e56; }
+
+  /* POSTS */
+  .posts-section {
+    padding: 64px 1.5rem;
+    background: #f8f8f6;
+  }
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .posts-section h2 {
+    font-size: 1.6rem;
+    color: #1c2a2a;
+    margin: 0 0 32px;
+    font-weight: 600;
+  }
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .post-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 24px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: box-shadow 0.2s;
+  }
+  .post-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .post-tag {
+    display: inline-block;
+    background: #e1f5ee;
+    color: #0f6e56;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    width: fit-content;
+  }
+  .post-card h3 {
+    color: #1c2a2a;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+  .post-card p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+  }
+  .read-more {
+    color: #1d9e75;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  /* ABOUT STRIP */
+  .about-strip {
+    background: #1c2a2a;
+    padding: 56px 1.5rem;
+  }
+  .about-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .about-strip h2 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin: 0 0 12px;
+    font-weight: 600;
+  }
+  .about-strip p {
+    color: #9fe1cb;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 580px;
+  }
+  .btn-outline {
+    display: inline-block;
+    border: 2px solid #5dcaa5;
+    color: #5dcaa5;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .btn-outline:hover {
+    background: #5dcaa5;
+    color: #1c2a2a;
+  }
+</style>
