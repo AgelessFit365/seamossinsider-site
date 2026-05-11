@@ -2,7 +2,7 @@
 title: "Wildcrafted vs. Pool-Grown Sea Moss: What the Label Isn't Telling You"
 description: "Most sea moss on the market today is pool-grown — and brands aren't rushing to tell you. Here's how to spot the difference, why it matters for your health, and what to look for before you buy."
 pubDate: 2026-05-11
-heroImage: "/images/blog/wildcrafted-vs-pool-grown-sea-moss.jpg"
+
 tags: ["sea moss", "wildcrafted sea moss", "pool grown sea moss", "sea moss quality", "how to buy sea moss"]
 ---
 
