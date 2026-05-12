@@ -3,13 +3,15 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
-
 import tailwindcss from '@tailwindcss/vite';
+import indexnow from 'astro-indexnow';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
-  integrations: [mdx(), sitemap()],
+  site: 'https://seamossinsider.com',
+  integrations: [mdx(), sitemap(), indexnow({
+    key: 'seamossinsider2026xk9mnd74bqwe31',
+  })],
 
   fonts: [
       {
