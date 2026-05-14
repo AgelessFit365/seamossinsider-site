@@ -2,7 +2,7 @@
 title: "How to Make Sea Moss Gel at Home (The Right Way)"
 description: "Making sea moss gel at home is cheaper, cleaner, and gives you full control over quality. Here's the complete step-by-step process — plus how to store it, how long it lasts, and the mistakes that ruin a batch."
 pubDate: 2026-04-24
-heroImage: "/images/blog/how-to-make-sea-moss-gel.png"
+heroImage: "./how-to-make-sea-moss-gel.png"
 tags: ["how to make sea moss gel", "sea moss gel recipe", "DIY sea moss gel", "sea moss at home", "sea moss preparation", "wildcrafted sea moss"]
 ---
 
