@@ -148,7 +148,7 @@ Potentially, through two mechanisms — zinc content (which regulates sebum prod
 The vitamin C and cellular turnover support from sea moss may contribute modestly to hyperpigmentation improvement over time. For significant hyperpigmentation, sea moss is a supportive addition to a dedicated treatment protocol rather than a primary intervention.
 
 **What's the best form of sea moss for skin benefits?**
-Wildcrafted sea moss gel made from whole raw moss provides the most complete nutrient profile. For topical application, fresh gel or high-quality skincare products containing sea moss extract are the most effective forms.
+Wildcrafted sea moss gel made from whole raw moss provides the most complete nutrient profile — sourcing matters significantly for skin benefits, so use our [Sea Moss Authenticity Checklist](/audit) to verify what you're buying before you commit to a brand. For topical application, fresh gel or high-quality skincare products containing sea moss extract are the most effective forms.
 
 ---
 
