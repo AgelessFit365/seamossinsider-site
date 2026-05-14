@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://www.seamossinsider.com/*"
+  to = "https://seamossinsider.com/:splat"
+  status = 301
+  force = true
